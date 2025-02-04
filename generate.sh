@@ -16,7 +16,7 @@ CHECKSUM=$(swift package compute-checksum "./VLCKit.xcframework.zip")
 
 # Update Package.swift
 sed -i '' \
-    -e "s|/download/v[0-9]\+\.[0-9]\+\.[0-9]\+/|/download/v$VERSION/|" \
+    -e "s|/download/v[^/]*/|/download/v$VERSION/|" \
     -e "s|checksum: \"[a-f0-9]\{64\}\"|checksum: \"$CHECKSUM\"|" \
     "./Package.swift"
 
