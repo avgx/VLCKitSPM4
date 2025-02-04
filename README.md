@@ -8,10 +8,11 @@ Add this repo to as a Swift Package dependency to your project
 ```
 https://github.com/rursache/VLCKitSPM
 ```
+and select "Branch: `master`"
 
 If using this in a swift package, add this repo as a dependency.
 ```
-.package(url: "https://github.com/rursache/VLCKitSPM/", .upToNextMajor(from: "4.0.0"))
+.package(url: "https://github.com/rursache/VLCKitSPM/", .branch("master"))
 ```
 
 ### Usage
